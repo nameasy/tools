@@ -1,0 +1,125 @@
+<!doctype html>
+<!-- Design by Stepan Lyubavtsev. http://mywonderful.website/ -->
+<html lang="ru">
+	<head>
+		<meta charset="utf-8" />
+		<meta content="width=device-width, initial-scale=1" name="viewport" />
+		<title>Конвертер цветов</title>
+		<link href="/index.0fe43406.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<svg display="none">
+			<defs>
+				<symbol fill="none" id="copy" viewbox="0 0 24 24">
+					<path
+						d="M5 15C4.06812 15 3.60218 15 3.23463 14.8478C2.74458 14.6448 2.35523 14.2554 2.15224 13.7654C2 13.3978 2 12.9319 2 12V5.2C2 4.0799 2 3.51984 2.21799 3.09202C2.40973 2.71569 2.71569 2.40973 3.09202 2.21799C3.51984 2 4.0799 2 5.2 2H12C12.9319 2 13.3978 2 13.7654 2.15224C14.2554 2.35523 14.6448 2.74458 14.8478 3.23463C15 3.60218 15 4.06812 15 5M12.2 22H18.8C19.9201 22 20.4802 22 20.908 21.782C21.2843 21.5903 21.5903 21.2843 21.782 20.908C22 20.4802 22 19.9201 22 18.8V12.2C22 11.0799 22 10.5198 21.782 10.092C21.5903 9.71569 21.2843 9.40973 20.908 9.21799C20.4802 9 19.9201 9 18.8 9H12.2C11.0799 9 10.5198 9 10.092 9.21799C9.71569 9.40973 9.40973 9.71569 9.21799 10.092C9 10.5198 9 11.0799 9 12.2V18.8C9 19.9201 9 20.4802 9.21799 20.908C9.40973 21.2843 9.71569 21.5903 10.092 21.782C10.5198 22 11.0799 22 12.2 22Z"
+						stroke-linecap="square"
+						stroke-linejoin="square"
+						stroke-width="2"
+					></path>
+				</symbol>
+				<symbol fill="none" id="menu" viewbox="0 0 24 24">
+					<path d="M3 12H21M3 6H21M3 18H21" stroke-linecap="square" stroke-linejoin="square" stroke-width="2"></path>
+				</symbol>
+			</defs>
+		</svg>
+		<div class="page">
+			<nav class="menu">
+				<div class="menu__inner">
+					<div class="menu__dropdown">
+						<button class="button menu__trigger">
+							<svg width="24" height="24" class="button__icon menu__trigger-icon">
+								<use href="#menu"></use>
+							</svg>
+						</button>
+						<ul class="menu__dropdown-list">
+							<li class="menu__dropdown-item">
+								<a class="menu__dropdown-link" href="/color-converter.html">
+									<div class="menu__dropdown-title">Конвертер цветов</div>
+								</a>
+							</li>
+							<li class="menu__dropdown-item">
+								<a class="menu__dropdown-link" href="/phone-formatter.html">
+									<div class="menu__dropdown-title">Телеформатер</div>
+									<div class="menu__dropdown-text">Форматер телефонных номеров</div>
+								</a>
+							</li>
+							<li class="menu__dropdown-item">
+								<a class="menu__dropdown-link" href="/class-to-var.html">
+									<div class="menu__dropdown-title">class → var</div>
+									<div class="menu__dropdown-text">Преобразователь из класса в переменную</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<main class="main">
+				<section class="section">
+					<header class="section__header">
+						<div class="container">
+							<h1 class="section__title">Конвертер цветов</h1>
+						</div>
+					</header>
+					<div class="section__content">
+						<div class="container">
+							<div class="converter">
+								<form autocomplete="off" class="converter__field">
+									<label class="visually-hidden">Введите цвет</label>
+									<input class="converter__input input" placeholder="name, hex, rgb, hsl, hwb, cmyk, ncol" type="text" />
+									<span class="converter__result"></span>
+								</form>
+								<div class="converter__error"></div>
+								<table class="converter__table">
+									<tbody>
+										<tr>
+											<td class="converter__caption">Name</td>
+											<td class="converter__text converter__text--name"></td>
+										</tr>
+										<tr>
+											<td class="converter__caption">Rgb</td>
+											<td class="converter__text converter__text--rgb"></td>
+										</tr>
+										<tr>
+											<td class="converter__caption">Hex</td>
+											<td class="converter__text converter__text--hex"></td>
+										</tr>
+										<tr>
+											<td class="converter__caption">Hsl</td>
+											<td class="converter__text converter__text--hsl"></td>
+										</tr>
+										<tr>
+											<td class="converter__caption">Hwb</td>
+											<td class="converter__text converter__text--hwb"></td>
+										</tr>
+										<tr>
+											<td class="converter__caption">Cmyk</td>
+											<td class="converter__text converter__text--cmyk"></td>
+										</tr>
+										<tr>
+											<td class="converter__caption">Ncol</td>
+											<td class="converter__text converter__text--ncol"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer">
+				<div class="container">
+					<div class="footer__design">
+						<div class="footer__text">
+							Проект
+							<a class="link" href="http://mywonderful.website/">Степана Любавцева</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<script src="https://www.w3schools.com/lib/w3color.js"></script>
+		<script src="/color-converter.3c90c5a2.js"></script>
+	</body>
+</html>
