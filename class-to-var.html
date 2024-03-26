@@ -1,0 +1,107 @@
+<!doctype html>
+<!-- Design by Stepan Lyubavtsev (https://lyubavtsev.ru/) -->
+<html lang="ru">
+	<head>
+		<meta charset="utf-8" />
+		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+		<title>class → var</title>
+		<base href="https://nameasy.github.io/tools/" />
+		<meta content="class → var" name="title" />
+		<meta content="Преобразователь названий классов в названия переменных" name="description" />
+		<meta content="website" property="og:type" />
+		<meta content="https://nameasy.github.io/tools/class-to-var.html" property="og:url" />
+		<meta content="class → var" property="og:title" />
+		<meta content="Преобразователь названий классов в названия переменных" property="og:description" />
+		<meta content="summary_large_image" property="twitter:card" />
+		<meta content="https://nameasy.github.io/tools/class-to-var.html" property="twitter:url" />
+		<meta content="class → var" property="twitter:title" />
+		<meta content="Преобразователь названий классов в названия переменных" property="twitter:description" />
+		<script type="module" crossorigin src="/assets/classToVar-BcK9aWQ-.js"></script>
+		<link rel="modulepreload" crossorigin href="/assets/modulepreload-polyfill-B5Qt9EMX.js">
+		<link rel="stylesheet" crossorigin href="/assets/index-BovazmRe.css">
+	</head>
+
+	<body>
+		<svg display="none">
+			<defs>
+				<symbol fill="none" id="copy" viewBox="0 0 20 24">
+					<path d="M7 9V6.2002C7 5.08009 7 4.51962 7.21799 4.0918C7.40973 3.71547 7.71547 3.40973 8.0918 3.21799C8.51962 3 9.08009 3 10.2002 3H15.8002C16.9203 3 17.4801 3 17.9079 3.21799C18.2842 3.40973 18.5905 3.71547 18.7822 4.0918C19.0002 4.51962 19.0002 5.07967 19.0002 6.19978V11.7998C19.0002 12.9199 19.0002 13.48 18.7822 13.9078C18.5905 14.2841 18.2839 14.5905 17.9076 14.7822C17.4802 15 16.921 15 15.8031 15H13M7 9H4.2002C3.08009 9 2.51962 9 2.0918 9.21799C1.71547 9.40973 1.40973 9.71547 1.21799 10.0918C1 10.5196 1 11.0801 1 12.2002V17.8002C1 18.9203 1 19.4801 1.21799 19.9079C1.40973 20.2842 1.71547 20.5905 2.0918 20.7822C2.5192 21 3.07899 21 4.19691 21H9.80355C10.9215 21 11.4805 21 11.9079 20.7822C12.2842 20.5905 12.5905 20.2839 12.7822 19.9076C13 19.4802 13 18.921 13 17.8031V15M7 9H9.8002C10.9203 9 11.4801 9 11.9079 9.21799C12.2842 9.40973 12.5905 9.71547 12.7822 10.0918C13 10.5192 13 11.079 13 12.1969L13 15" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="2"></path>
+				</symbol>
+				<symbol fill="none" id="menu" viewBox="0 0 20 24">
+					<path d="M1 17H19M1 12H19M1 7H19" stroke-linecap="square" stroke-linejoin="bevel" stroke-width="2"></path>
+				</symbol>
+			</defs>
+		</svg>
+		<div class="page">
+			<nav class="navigation">
+				<div class="navigation__inner">
+					<div class="navigation__dropdown">
+						<button class="button navigation__trigger">
+							<svg class="button__icon navigation__trigger-icon" height="24" width="20">
+								<use href="#menu"></use>
+							</svg>
+						</button>
+						<ul class="navigation__dropdown-list">
+							<li class="navigation__dropdown-item">
+								<a class="navigation__dropdown-link" href="color-converter.html">
+									<div class="navigation__dropdown-title">Конвертер цветов</div>
+								</a>
+							</li>
+							<li class="navigation__dropdown-item">
+								<a class="navigation__dropdown-link" href="phone-formatter.html">
+									<div class="navigation__dropdown-title">Телеформатер</div>
+									<div class="navigation__dropdown-text">Форматер телефонных номеров</div>
+								</a>
+							</li>
+							<li class="navigation__dropdown-item">
+								<a class="navigation__dropdown-link" href="class-to-var.html">
+									<div class="navigation__dropdown-title">class → var</div>
+									<div class="navigation__dropdown-text">Преобразователь из класса в переменную</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<main class="main">
+				<section class="section">
+					<header class="section__header">
+						<div class="container">
+							<h1 class="section__title">class → var</h1>
+							<div class="section__description">Преобразователь названий классов в названия переменных</div>
+							<div class="section__hint">Например, если набрать <span style="font-weight: 600">lang-switcher__item</span>, то на выходе будет <span style="font-weight: 600">langSwitcherItem</span></div>
+						</div>
+					</header>
+					<div class="section__content">
+						<div class="container">
+							<form autocomplete="off" class="form" data-form="class-to-var">
+								<div class="form__group">
+									<label class="form__label">Класс</label>
+									<input class="form__control input" id="input" type="text" />
+								</div>
+								<div class="form__group">
+									<label class="form__label">Переменная</label>
+									<div class="form__control-wrapper">
+										<input class="form__control input" id="output" type="text" />
+										<button class="button button--copy" id="copy" type="button">
+											<svg class="button__icon" height="24" width="20">
+												<use href="#copy"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer">
+				<div class="container">
+					<div class="footer__design">
+						<div class="footer__text">Проект <a class="link" href="https://lyubavtsev.ru/">Степана Любавцева</a></div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
